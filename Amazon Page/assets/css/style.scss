@@ -25,6 +25,12 @@ body {
 	border-radius: 1rem;
 }
 
+// Needed for screens larger more than 2024px
+.mwwrapper {
+	max-width: 125rem;
+	margin: 0 auto;
+}
+
 img {
 	max-width: 100%;
 }
@@ -49,6 +55,12 @@ header {
 				color: #f5ffff;
 				text-decoration: none;
 				font-size: 1.2rem;
+				&:hover,
+				&:focus {
+					outline: solid 1px #e9edee;
+					outline-offset: 3px;
+					border-radius: 3px;
+				}
 			}
 		}
 	}
@@ -72,7 +84,7 @@ main {
 		background-position: center;
 		text-align: center;
 		color: #e9edee;
-		padding: 5rem;
+		padding: 5rem 1rem;
 		font-weight: 600;
 		margin-bottom: 2rem;
 
@@ -95,6 +107,11 @@ main {
 			color: #007185;
 			text-decoration: none;
 			font-weight: 600;
+			&:hover,
+			&:focus {
+				color: #c7511f;
+				text-decoration: underline;
+			}
 		}
 	}
 	.wrapper {
@@ -109,12 +126,18 @@ main {
 			display: block;
 			margin: 0 0.8rem;
 			height: 28.125rem;
+			box-shadow: rgba(33, 47, 64, 0.27) 5px 6px 11px;
+			transition-duration: 300ms;
+			transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+			&:hover,
+			&:focus {
+				box-shadow: rgba(33, 47, 64, 0.6) 7px 6px 14px 1px;
+			}
 			img {
 				max-width: initial;
 				width: 100%;
 				height: 100%;
 				object-fit: cover;
-				box-shadow: rgba(33, 47, 64, 0.271) 5px 6px 11px;
 			}
 		}
 	}

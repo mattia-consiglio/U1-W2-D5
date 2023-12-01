@@ -1,0 +1,50 @@
+//adding reposponsive on extra time
+@media only screen and (max-width: 768px) {
+	header {
+		& > div {
+			.logo {
+				width: 9.5rem;
+			}
+		}
+		nav {
+			ul li {
+				margin-bottom: 0.5rem;
+			}
+		}
+	}
+
+	main {
+		.image-banner {
+			background-size: contain;
+		}
+
+		.wrapper {
+			.one-fourth {
+				display: inline-block;
+				max-width: 50%;
+				margin-right: -4px;
+				margin-bottom: 1rem;
+			}
+			.procut-image {
+				height: 18.125rem;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 425px) {
+	main {
+		.wrapper {
+			padding: 1rem 0.8rem;
+			.one-fourth {
+				display: block;
+				max-width: 100%;
+				margin-right: 0;
+				margin-bottom: 1rem;
+			}
+			.procut-image {
+				height: 8.125rem;
+			}
+		}
+	}
+}
